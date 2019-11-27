@@ -1,0 +1,12 @@
+.agepanel{
+    width: 50%;
+    height: 100%;
+    float: left;
+    background-color: aquamarine;
+    border-right: 2px solid grey;
+    padding: 10px;
+}
+
+#resultBox{
+    margin-block: 20px;
+}

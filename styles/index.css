@@ -1,13 +1,9 @@
-.agepanel{
-    width: 50%;
-    height: 100%;
-    float: left;
-    background-color: aquamarine;
+body{
+    padding: 0px;
+    margin: 0px;
 }
 
-.objpanel{
-    width: 50%;
-    height: 100%;
-    float: right;
-    background-color: bisque;
+.main{
+    padding: 10px;
 }
+

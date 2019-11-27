@@ -1,15 +1,26 @@
-function ageSubmit(){
-    var ageVal = $('#ageVal').value
-    console.log("Age Entered ", ageVal);
+function ageSubmitted() {
+    console.log("Reaching age submit fx");
+    var ageVal = $('#ageVal').val();
 
-    switch(Number(ageVal)){
-        case ageVal < 18 :
-            // Somethings here
-            break;
-        case ageVal > 18 :
-            // Something here
-            break;
-        default:
-            // something here
+    if (ageVal) {
+        ageVal = Number(ageVal);
     }
+    // https://stackoverflow.com/questions/6665997/switch-statement-for-greater-than-less-than
+
+    if (ageVal < 18 && ageVal > 0) {
+        $('#resultBox').html("<span>Current User is a minor</span>");
+    }
+
+    if (ageVal >= 18 && ageVal <= 36) {
+        $('#resultBox').html("<span>Current User is a youth</span>");
+    }
+
+    if (ageVal > 36) {
+        $('#resultBox').html("<span>Current User is an elder</span>");
+    }
+
+    if (ageVal <= 0) {
+        $('#resultBox').html("<span>Please Enter a valid age</span>");
+    }
+
 }
