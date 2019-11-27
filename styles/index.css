@@ -1,0 +1,13 @@
+.agepanel{
+    width: 50%;
+    height: 100%;
+    float: left;
+    background-color: aquamarine;
+}
+
+.objpanel{
+    width: 50%;
+    height: 100%;
+    float: right;
+    background-color: bisque;
+}
